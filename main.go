@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/nicos92/gouno/ejercicios"
 	"github.com/nicos92/gouno/helpers"
-	"github.com/nicos92/gouno/iteraciones"
 )
 
 func main() {
@@ -29,6 +29,7 @@ func main() {
 
 	// teclado.IngresoNumeros()
 	//
-	iteraciones.Iterar()
-
+	// iteraciones.Iterar()
+	//
+	ejercicios.VerTablaMultiplicar()
 }
