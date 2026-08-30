@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/nicos92/gouno/helpers"
-	"github.com/nicos92/gouno/teclado"
+	"github.com/nicos92/gouno/iteraciones"
 )
 
 func main() {
@@ -27,5 +27,8 @@ func main() {
 	// fmt.Println(mensaje)
 	//
 
-	teclado.IngresoNumeros()
+	// teclado.IngresoNumeros()
+	//
+	iteraciones.Iterar()
+
 }
