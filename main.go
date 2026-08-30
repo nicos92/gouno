@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/nicos92/gouno/condicionales"
 	"github.com/nicos92/gouno/helpers"
 )
 
@@ -16,5 +15,7 @@ func main() {
 	// fmt.Println(estado)
 	// fmt.Println(texto)
 	//
-	condicionales.VerCondicionales()
+	// condicionales.VerCondicionales()
+	//
+
 }
