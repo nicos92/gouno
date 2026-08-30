@@ -1,6 +1,9 @@
 package main
 
 import (
+	"fmt"
+
+	"github.com/nicos92/gouno/ejercicios"
 	"github.com/nicos92/gouno/helpers"
 )
 
@@ -17,5 +20,12 @@ func main() {
 	//
 	// condicionales.VerCondicionales()
 	//
+	numero, mensaje, err := ejercicios.LaFuncion("1")
+	if err != nil {
+		fmt.Println("Ocurrio un error: ", err)
+		return
+	}
+	fmt.Println(numero)
+	fmt.Println(mensaje)
 
 }
