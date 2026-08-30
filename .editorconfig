@@ -1,0 +1,13 @@
+# Configuración global
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+# Reglas específicas para Go
+[*.go]
+indent_style = tab
+indent_size = 4
