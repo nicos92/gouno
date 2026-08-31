@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	arreglosslices "github.com/nicos92/gouno/arreglos_slices"
 	"github.com/nicos92/gouno/helpers"
+	"github.com/nicos92/gouno/mapas"
 )
 
 func main() {
@@ -52,7 +52,9 @@ func main() {
 	//
 	// arreglosslices.MuestroSlice()
 	//
-	arreglosslices.Capacidad()
+	// arreglosslices.Capacidad()
+	//
+	mapas.MostrarMapas()
 
 	finMain()
 }

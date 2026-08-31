@@ -36,5 +36,6 @@ func Capacidad() {
 	}
 
 	fmt.Printf("\nnums: Largo %d, Capacidad %d", len(nums), cap(nums))
+	fmt.Printf("\narreglo: Largo %d, Capacidad %d", len(arreglo), cap(arreglo))
 
 }
