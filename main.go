@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nicos92/gouno/files"
+	"github.com/nicos92/gouno/funciones"
 	"github.com/nicos92/gouno/helpers"
 )
 
@@ -36,6 +36,12 @@ func main() {
 	//
 	// files.GrabarTabla()
 	//
-	files.SumaTabla()
-	files.LeoArchivo()
+	// files.SumaTabla()
+	// files.LeoArchivo()
+	//
+	// funciones.Calculos()
+	//
+	// funciones.LlamarClosure()
+	//
+	funciones.Exponencia(2)
 }
