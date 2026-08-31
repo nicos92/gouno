@@ -53,10 +53,16 @@ func LeoArchivo() {
 		fmt.Println("Error al leer el archivo.", err.Error())
 		return
 	}
+
+	defer archivo.Close()
+
 	scanner := bufio.NewScanner(archivo)
 	for scanner.Scan() {
 		fmt.Println(scanner.Text())
 	}
-	archivo.Close()
+	// Check for errors during scanning
+	if err := scanner.Err(); err != nil {
+		fmt.Println("Error durante el escaneo del archivo:", err.Error())
+	}
 
 }
