@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	deferspanic "github.com/nicos92/gouno/defers_panic"
+	"github.com/nicos92/gouno/goroutines"
 	"github.com/nicos92/gouno/helpers"
 )
 
@@ -69,8 +69,13 @@ func main() {
 	// fmt.Println(mabel.EstaVivo())
 	// ejercicios.HumanosRespirando(mabel)
 	//
-	deferspanic.VemosDefer()
-	deferspanic.EjemploPanic()
+	// deferspanic.VemosDefer()
+	// deferspanic.EjemploPanic()
+	//
+	go goroutines.MiNombreLentooo("Nicolás")
+	fmt.Println("Estoy acá")
+	var x string
+	fmt.Scanln(&x)
 
 	finMain()
 }
