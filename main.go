@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/nicos92/gouno/goroutines"
 	"github.com/nicos92/gouno/helpers"
+	"github.com/nicos92/gouno/middleware"
 )
 
 func main() {
@@ -72,14 +72,18 @@ func main() {
 	// deferspanic.VemosDefer()
 	// deferspanic.EjemploPanic()
 	//
-	canal := make(chan bool)
-	go goroutines.MiNombreLentooo("Nicolás", canal)
-	defer func() {
-		<-canal
-	}()
-	fmt.Println("Estoy acá")
-	var x string
-	fmt.Scanln(&x)
+	// canal := make(chan bool)
+	// go goroutines.MiNombreLentooo("Nicolás", canal)
+	// defer func() {
+	// 	<-canal
+	// }()
+	// fmt.Println("Estoy acá")
+	// var x string
+	// fmt.Scanln(&x)
+	//
+	// webserver.MiWebServer()
+	//
+	middleware.MiMiddleware()
 
 	finMain()
 }
