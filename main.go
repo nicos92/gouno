@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 
 	arreglosslices "github.com/nicos92/gouno/arreglos_slices"
@@ -9,8 +10,7 @@ import (
 
 func main() {
 	// CallClear()
-	helpers.CallClear()
-	log.Printf("Iniciando main.\n\n")
+	inicioMain()
 
 	// variables.MostrarEnteros()
 	// variables.RestoVariables()
@@ -48,5 +48,21 @@ func main() {
 	//
 	// funciones.Exponencia(2)
 	//
-	arreglosslices.MuestroArreglos()
+	// arreglosslices.MuestroArreglos()
+	//
+	// arreglosslices.MuestroSlice()
+	//
+	arreglosslices.Capacidad()
+
+	finMain()
+}
+
+func inicioMain() {
+	helpers.CallClear()
+	log.Printf("Iniciando main. 🚀\n\n")
+}
+func finMain() {
+	fmt.Printf("\n\n")
+	log.Println("Fin de main. 🔚")
+
 }
