@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/nicos92/gouno/helpers"
-	"github.com/nicos92/gouno/mapas"
+	"github.com/nicos92/gouno/users"
 )
 
 func main() {
@@ -54,7 +54,12 @@ func main() {
 	//
 	// arreglosslices.Capacidad()
 	//
-	mapas.MostrarMapas()
+	// mapas.MostrarMapas()
+	//
+	users.AltaUsuario()
+	users.AltaUsuario()
+	users.AltaUsuario()
+	users.AltaUsuario()
 
 	finMain()
 }
