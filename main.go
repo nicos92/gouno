@@ -1,13 +1,16 @@
 package main
 
 import (
-	"github.com/nicos92/gouno/funciones"
+	"log"
+
+	arreglosslices "github.com/nicos92/gouno/arreglos_slices"
 	"github.com/nicos92/gouno/helpers"
 )
 
 func main() {
 	// CallClear()
 	helpers.CallClear()
+	log.Printf("Iniciando main.\n\n")
 
 	// variables.MostrarEnteros()
 	// variables.RestoVariables()
@@ -43,5 +46,7 @@ func main() {
 	//
 	// funciones.LlamarClosure()
 	//
-	funciones.Exponencia(2)
+	// funciones.Exponencia(2)
+	//
+	arreglosslices.MuestroArreglos()
 }
