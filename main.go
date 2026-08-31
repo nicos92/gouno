@@ -72,7 +72,11 @@ func main() {
 	// deferspanic.VemosDefer()
 	// deferspanic.EjemploPanic()
 	//
-	go goroutines.MiNombreLentooo("Nicolás")
+	canal := make(chan bool)
+	go goroutines.MiNombreLentooo("Nicolás", canal)
+	defer func() {
+		<-canal
+	}()
 	fmt.Println("Estoy acá")
 	var x string
 	fmt.Scanln(&x)
