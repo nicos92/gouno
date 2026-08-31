@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/nicos92/gouno/ejercicios"
+	"github.com/nicos92/gouno/files"
 	"github.com/nicos92/gouno/helpers"
 )
 
@@ -31,5 +31,11 @@ func main() {
 	//
 	// iteraciones.Iterar()
 	//
-	ejercicios.VerTablaMultiplicar()
+	// text := ejercicios.VerTablaMultiplicarFile()
+	// fmt.Println(text)
+	//
+	// files.GrabarTabla()
+	//
+	files.SumaTabla()
+	files.LeoArchivo()
 }
