@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/nicos92/gouno/ejercicios"
 	"github.com/nicos92/gouno/helpers"
-	"github.com/nicos92/gouno/users"
+	"github.com/nicos92/gouno/modelos"
 )
 
 func main() {
@@ -56,10 +57,18 @@ func main() {
 	//
 	// mapas.MostrarMapas()
 	//
-	users.AltaUsuario()
-	users.AltaUsuario()
-	users.AltaUsuario()
-	users.AltaUsuario()
+	// users.AltaUsuario()
+	// users.AltaUsuario()
+	// users.AltaUsuario()
+	// users.AltaUsuario()
+	//
+	pedro := new(modelos.Hombre)
+	fmt.Println(pedro.EstaVivo())
+	ejercicios.HumanosRespirando(pedro)
+
+	mabel := new(modelos.Mujer)
+	fmt.Println(mabel.EstaVivo())
+	ejercicios.HumanosRespirando(mabel)
 
 	finMain()
 }
