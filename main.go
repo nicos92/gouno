@@ -4,9 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/nicos92/gouno/ejercicios"
+	deferspanic "github.com/nicos92/gouno/defers_panic"
 	"github.com/nicos92/gouno/helpers"
-	"github.com/nicos92/gouno/modelos"
 )
 
 func main() {
@@ -62,13 +61,16 @@ func main() {
 	// users.AltaUsuario()
 	// users.AltaUsuario()
 	//
-	pedro := new(modelos.Hombre)
-	fmt.Println(pedro.EstaVivo())
-	ejercicios.HumanosRespirando(pedro)
+	// pedro := new(modelos.Hombre)
+	// fmt.Println(pedro.EstaVivo())
+	// ejercicios.HumanosRespirando(pedro)
 
-	mabel := new(modelos.Mujer)
-	fmt.Println(mabel.EstaVivo())
-	ejercicios.HumanosRespirando(mabel)
+	// mabel := new(modelos.Mujer)
+	// fmt.Println(mabel.EstaVivo())
+	// ejercicios.HumanosRespirando(mabel)
+	//
+	deferspanic.VemosDefer()
+	deferspanic.EjemploPanic()
 
 	finMain()
 }
